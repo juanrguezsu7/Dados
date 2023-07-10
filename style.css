@@ -1,0 +1,96 @@
+body {
+  background-color: darkgrey;
+  font-family: 'Bebas Neue', sans-serif;
+  margin: 0px;
+}
+
+#title {
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  line-height: 1;
+  border: 8px solid black;
+  font-size: 7rem;
+  letter-spacing: 5px;
+  padding: 10px 10px 0px 15px;
+}
+
+h2 {
+  margin: 0px;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+#dices-button {
+  height: 50vh;
+  gap: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#refresh-button {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 30px;
+  height: 50px;
+  width: 100px;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: darkcyan;
+}
+
+#refresh-button:hover {
+  background-color: cyan;
+}
+
+#refresh-button:active {
+  background-color: darkgoldenrod;
+  border: 6px solid black;
+}
+
+footer {
+  position: absolute;
+  height: 5%;
+  width: 100%;
+  background-color: gray;
+  top: 95%;
+  text-align: center;
+}
+
+@keyframes diceThrobFirst {
+    0% {
+      height: 256px;
+    }
+    50% {
+      height: 200px;
+    }
+    100% {
+      height: 256px;
+    }
+}
+
+@keyframes diceThrobSecond {
+  0% {
+    height: 256px;
+  }
+  50% {
+    height: 300px;
+  }
+  100% {
+    height: 256px;
+  }
+}
+
+.dice {
+  animation-name: diceThrobFirst;
+  animation-duration: 1s;
+}
+
+.dice-transition {
+  animation-name: diceThrobSecond;
+  animation-duration: 1s;
+}
